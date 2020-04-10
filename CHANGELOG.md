@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+## v3.1.0 - 2020-04-10
+
+### Added
+
+- Added the ability to provide defaults.
+
+### Removed
+
+- Removed pino.
+
 ## v3.0.0 - 29 June 2019
 
 - Updated all dependencies.

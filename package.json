@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.1.0",
   "name": "allanchau-http-error",
   "description": "Simple Express HTTP error handler.",
   "keywords": [
@@ -48,7 +48,5 @@
     "prettier": "2.0.4",
     "supertest": "^4.0.2"
   },
-  "dependencies": {
-    "pino": "^6.1.1"
-  }
+  "dependencies": {}
 }

@@ -1,6 +1,7 @@
 # node-http-error
 
 [![npm](https://img.shields.io/npm/v/allanchau-http-error.svg)](https://www.npmjs.com/package/allanchau-http-error)
+![Publish](https://github.com/allanchau/node-http-error/workflows/Publish/badge.svg)
 ![Report coverage](https://github.com/allanchau/node-http-error/workflows/Report%20coverage/badge.svg)
 ![Test](https://github.com/allanchau/node-http-error/workflows/Test/badge.svg)
 
@@ -60,5 +61,27 @@ app.get("/customerrorexample", (req, res, next) => {
 // {
 //   "code": "ERRBADREQUEST",
 //   "message": "Oops something went wrong.",
+// }
+```
+
+You can also provide some defaults for the route.
+
+```js
+app.use(
+  httpError({
+    defaultCode: "ERRNOTAUTHORIZED",
+    defaultMessage: "The user is not authorized.",
+    defaultStatusCode: 401,
+  })
+);
+
+app.get("/stringexample", (req, res, next) => {
+  return res.error();
+});
+
+// Returns
+// {
+//   "code": "ERRNOTAUTHORIZED",
+//   "message": "The user is not authorized.",
 // }
 ```
