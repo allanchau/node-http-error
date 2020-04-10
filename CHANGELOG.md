@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v3.1.0 - 2020-04-10
+
 ### Added
 
 - Added the ability to provide defaults.
