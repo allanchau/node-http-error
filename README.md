@@ -1,6 +1,7 @@
 # node-http-error
 
 [![npm](https://img.shields.io/npm/v/allanchau-http-error.svg)](https://www.npmjs.com/package/allanchau-http-error)
+![Publish](https://github.com/allanchau/node-http-error/workflows/Publish/badge.svg)
 ![Report coverage](https://github.com/allanchau/node-http-error/workflows/Report%20coverage/badge.svg)
 ![Test](https://github.com/allanchau/node-http-error/workflows/Test/badge.svg)
 
