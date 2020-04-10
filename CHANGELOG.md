@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Added
+
+- Added the ability to provide defaults.
+
+### Removed
+
 - Removed pino.
 
 ## v3.0.0 - 29 June 2019

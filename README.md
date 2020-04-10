@@ -62,3 +62,25 @@ app.get("/customerrorexample", (req, res, next) => {
 //   "message": "Oops something went wrong.",
 // }
 ```
+
+You can also provide some defaults for the route.
+
+```js
+app.use(
+  httpError({
+    defaultCode: "ERRNOTAUTHORIZED",
+    defaultMessage: "The user is not authorized.",
+    defaultStatusCode: 401,
+  })
+);
+
+app.get("/stringexample", (req, res, next) => {
+  return res.error();
+});
+
+// Returns
+// {
+//   "code": "ERRNOTAUTHORIZED",
+//   "message": "The user is not authorized.",
+// }
+```
